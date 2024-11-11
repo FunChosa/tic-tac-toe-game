@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round:regular);
+
+:root {
+  --background-color: #0f1b21;
+  --yellow-color: #e4ea54;
+  --green-color: #44f298;
+  --dark-color: #1f3540;
+  --light-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", cursive;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  flex-direction: column;
+  min-height: 800px;
+  /* min-width: 600px; */
+  padding: 40px;
+}
+
+h1 {
+  color: var(--light-color);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text-tie {
+  color: var(--yellow-color);
+}
+
+.text-won {
+  color: var(--green-color);
+}
+
+.text-none {
+  color: var(--dark-color);
+}
+
+.board-none {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-won,
+.board-tie {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  flex: 33%;
+  height: 100%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  background: var(--dark-color);
+  border: 4px solid var(--background-color);
+  border-radius: 12px;
+}
+
+.reset {
+  width: 240px;
+  height: 80px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: var(--dark-color);
+  font-size: 26px;
+  color: var(--green-color);
+  margin-top: 25px;
+  margin-bottom: 50px;
+  transition: all 0.3s;
+}
+
+.reset:hover {
+  color: var(--yellow-color);
+}
+
+@media screen and (max-width: 900px) {
+  .board-none,
+  .board-won,
+  .board-tie {
+    width: 300px;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .reset {
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
