@@ -14,7 +14,7 @@ A simple and classic Tic-Tac-Toe game for two players on a single device. The ga
 * Two-Player Mode: Designed for two players playing on the same device.
 * Alternating Turns: X always goes first, and turns alternate between X and O automatically.
 * Win Condition Check: The game checks for a win after every move, immediately announcing the winner if one is found. Winning conditions include three in a row horizontally, vertically, or diagonally.
-* Tie Condition Check: If all squares are filled and no winning condition is met, the game declares a draw.
+* Tie Condition Check: If all squares are filled and no winning condition is met, the game declares a tie.
 * Clear Visual Feedback: The game provides clear visual feedback to show the current player’s turn and the placement of marks on the board.
 * Easy Restart: A dedicated restart button allows players to quickly start a new game.
 
